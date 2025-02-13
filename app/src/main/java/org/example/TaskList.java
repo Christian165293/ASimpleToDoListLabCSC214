@@ -13,7 +13,9 @@ public class TaskList {
         Task task = new Task(inTaskName, inTaskStatus, inTaskDescription);
         tasks.add(task);
     }
-
+    public ArrayList<Task> getTasks(){
+        return tasks;
+    }
     public void addTask(String inTaskName, String inTaskStatus, String inTaskDescription) {
         Task task = new Task(inTaskName, inTaskStatus, inTaskDescription);
         tasks.add(task);
