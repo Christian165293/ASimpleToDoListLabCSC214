@@ -1,12 +1,7 @@
 package org.example;
 
-//stores information about a single task
 public class Task {
-    //complete or incomplete
-    //description
-    //give it an id to make each task unique
 
-    //marker methods like mark task complete
     private String name;
     private String status;
     private String description;

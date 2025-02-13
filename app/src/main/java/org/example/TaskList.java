@@ -3,19 +3,17 @@ package org.example;
 import java.util.ArrayList;
 
 public class TaskList {
-    //create a new task method to take in description and names and whatever other information make up
-    //a task
-    //within this method create a new task object and store it into private arrayList<Task>
-    //public printAll()
     private final ArrayList<Task> tasks = new ArrayList<>();
 
     public TaskList(String inTaskName, String inTaskStatus, String inTaskDescription) {
         Task task = new Task(inTaskName, inTaskStatus, inTaskDescription);
         tasks.add(task);
     }
-    public ArrayList<Task> getTasks(){
+
+    public ArrayList<Task> getTasks() {
         return tasks;
     }
+
     public void addTask(String inTaskName, String inTaskStatus, String inTaskDescription) {
         Task task = new Task(inTaskName, inTaskStatus, inTaskDescription);
         tasks.add(task);

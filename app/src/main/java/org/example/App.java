@@ -34,7 +34,7 @@ public class App {
                 case 1:
                     System.out.print("Enter initial task name: ");
                     String taskName = scanner.nextLine();
-                    String taskStatus = getValidStatus(scanner); // Validate status input
+                    String taskStatus = getValidStatus(scanner);
                     System.out.print("Enter initial task description: ");
                     String taskDescription = scanner.nextLine();
                     taskList = new TaskList(taskName, taskStatus, taskDescription);
@@ -48,7 +48,7 @@ public class App {
                     }
                     System.out.print("Enter task name: ");
                     String newTaskName = scanner.nextLine();
-                    String newTaskStatus = getValidStatus(scanner); // Validate status input
+                    String newTaskStatus = getValidStatus(scanner);
                     System.out.print("Enter task description: ");
                     String newTaskDescription = scanner.nextLine();
                     taskList.addTask(newTaskName, newTaskStatus, newTaskDescription);
